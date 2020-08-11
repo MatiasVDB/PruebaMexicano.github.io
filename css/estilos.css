@@ -214,6 +214,9 @@
  }
  
  @media screen and (max-width: 360px) {
+     .contenedorColumnas {
+         height: 200px;
+     }
      .contenedorGrid {
          margin: auto;
          width: 90%;
@@ -221,7 +224,7 @@
          justify-content: center;
      }
      .listaUno {
-         font-size: 0.9em;
+         font-size: 0.7em;
      }
      .listaDos {
          margin: auto;
