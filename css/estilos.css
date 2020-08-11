@@ -120,7 +120,6 @@
            letter-spacing: 4px;
            list-style: none;
            font-size: 1em;
-           
        }
        
        .elementoUno {
@@ -196,14 +195,14 @@
                grid-column-start: 2;
            }
            .contenedorGrid {
+               width: 90%;
                grid-row-gap: 20px;
            }
-  
-           .listaUno{
-               
-           font-size: 0.9em;    
+           .listaUno {
+               font-size: 0.9em;
            }
            .listaDos {
+               margin: auto;
                grid-row-start: 2;
                grid-column-start: 1;
                font-size: 1.5em;
