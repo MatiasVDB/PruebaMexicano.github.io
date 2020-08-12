@@ -215,7 +215,8 @@
  
  @media screen and (max-width: 360px) {
      .transparencia {
-         height: 200px;
+         width: 100%;
+         height: 100px;
      }
      .contenedorGrid {
          margin: auto;
