@@ -85,7 +85,7 @@
  }
  
  #columnaTres {
-     background-image: url(../img/takeaway.jpg);
+     background-image: url(../img/takeAway.jpg);
      background-size: 100%;
      background-repeat: no-repeat;
  }
@@ -230,7 +230,6 @@
          font-size: 1.5em;
          text-align: center;
      }
-     
      @media screen and (max-width: 360px) {
          .transparencia {
              width: 100%;
