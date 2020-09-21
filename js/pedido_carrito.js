@@ -8,7 +8,6 @@ function getCookiePlates() {
     var name
     var allPlates = [1]
     var ca = document.cookie.split(';');
-    // console.log("Llego")
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         name = 'plato'
@@ -16,32 +15,16 @@ function getCookiePlates() {
             c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-            // console.log(c.substring((name.length + 2), c.length))
             allPlates[i] = c.substring((name.length + 2), c.length);
         }
     }
     if (allPlates[0] == 1) {
-        // console.log("fallo")
         return "";
     } else {
         return allPlates
     }
 }
 
-// function getContador() {
-//     var cookies = document.cookie.split(';')
-//     for (i = 0; i < cookies.length; i++) {
-//         var c = cookies[i]
-//         name = "contador="
-//         while (c.charAt(0) == ' ') {
-//             c = c.substring(1);
-
-//         }
-//         if (c.indexOf(name) == 0) {
-//             return Number(c.substring(name.length, c.length))
-//         }
-//     }
-// }
 function getContador() {
     var cookies = document.cookie.split(';')
     for (i = 0; i < cookies.length; i++) {
@@ -135,22 +118,20 @@ function resetCookies() {
 }
 
 function deleteCookie(string) {
-    var ca = document.cookie.split(';');
-    var j = (getContador() - ca.length) + 1
+    var ca = document.cookie.split(';')
     var tam = getContador()
+    var c
     for (var i = 0; i < tam; i++) {
-        var c = ca[i];
-        name = 'plato' + i + "="
+        c = ca[i];
+        name = 'plato'
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
-        title = getTitle(c.substring(name.length, c.length))
-        if (string == title) {
+        title = getTitle(c.substring((name.length + 2), c.length))
+        if (string == title && c.indexOf(name) == 0) {
+            document.cookie = c.substring(0, name.length + 2) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
             alert("Se quito " + string + " del pedido")
-            document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
-        }
-        if (c.indexOf(name) == 0) {
-            j++
+            return
         }
     }
 }
