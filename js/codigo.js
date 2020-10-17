@@ -1,4 +1,5 @@
-$(document).ready(function(e) {
+// Togle inicial para todos los objetos de la lista
+$(document).ready(function (e) {
 
     $("#listaNachosZapatistas").toggle(
 
@@ -19,6 +20,10 @@ $(document).ready(function(e) {
 
     );
 
+    $("#listaPapas").toggle(
+
+    );
+
     $("#listaPechugitasBuffaloRecargadas").toggle(
 
     );
@@ -35,13 +40,56 @@ $(document).ready(function(e) {
 
     );
 
+    $("#listaEnsaladaMexicana").toggle(
+
+    );
+    $("#listaEnsaladaAcapulco").toggle(
+
+    );
+    $("#listaEnsaladaCesar").toggle(
+
+    );
+    $("#listaEnsaladaQuinoa").toggle(
+
+    );
+    $("#listaTacosChilorio").toggle(
+
+    );
+    $("#listaTacosPilbil").toggle(
+
+    );
+    $("#listaTacosPollo").toggle(
+
+    );
+    $("#listaTacosVerdura").toggle(
+
+    );
+    $("#listaTacosAsada").toggle(
+
+    );
+    $("#listaQuesadillasChilorio").toggle(
+
+    );
+    $("#listaQuesadillasPilbil").toggle(
+
+    );
+    $("#listaQuesadillasPollo").toggle(
+
+    );
+    $("#listaQuesadillasVerdura").toggle(
+
+    );
+    $("#listaQuesadillasAsada").toggle(
+
+    );
+
 });
 
 
-
-$(document).ready(function(e) {
+// READY NACHOS
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonNachos").click(function(e) {
+    $("#contenedorBotonNachos").click(function (e) {
 
 
         if (contador == 0) {
@@ -59,11 +107,11 @@ $(document).ready(function(e) {
 
 });
 
-
-$(document).ready(function(e) {
+// READY CHICHARRONES
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonChicharrones").click(function(e) {
-        console.log(contador)
+    $("#contenedorBotonChicharrones").click(function (e) {
+
 
         if (contador == 0) {
 
@@ -82,19 +130,21 @@ $(document).ready(function(e) {
 
 });
 
-$(document).ready(function(e) {
+// READY PAPAS
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonPapas").click(function(e) {
-        console.log(contador)
+    $("#contenedorBotonPapas").click(function (e) {
 
 
         if (contador == 0) {
             $("#listaPapasZapatistas").show(e);
+            $("#listaPapas").show(e);
 
 
             contador++;
         } else {
             $("#listaPapasZapatistas").hide(e);
+            $("#listaPapas").hide(e);
 
             contador = 0;
         }
@@ -102,10 +152,10 @@ $(document).ready(function(e) {
 
 });
 
-$(document).ready(function(e) {
+// READY PECHUGAS
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonPechugitas").click(function(e) {
-        console.log(contador)
+    $("#contenedorBotonPechugitas").click(function (e) {
 
 
         if (contador == 0) {
@@ -122,10 +172,10 @@ $(document).ready(function(e) {
 
 });
 
-$(document).ready(function(e) {
+// READY TAMALES
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonTamales").click(function(e) {
-        console.log(contador)
+    $("#contenedorBotonTamales").click(function (e) {
 
 
         if (contador == 0) {
@@ -142,10 +192,10 @@ $(document).ready(function(e) {
 
 });
 
-$(document).ready(function(e) {
+// READY SOPAS
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonSopas").click(function(e) {
-        console.log(contador)
+    $("#contenedorBotonSopas").click(function (e) {
 
         if (contador == 0) {
 
@@ -163,3 +213,77 @@ $(document).ready(function(e) {
     });
 
 });
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonEnsaladas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaEnsaladaMexicana").show(e);
+            $("#listaEnsaladaAcapulco").show(e);
+            $("#listaEnsaladaCesar").show(e);
+            $("#listaEnsaladaQuinoa").show(e);
+            contador++;
+        } else {
+
+            $("#listaEnsaladaMexicana").hide(e);
+            $("#listaEnsaladaAcapulco").hide(e);
+            $("#listaEnsaladaCesar").hide(e);
+            $("#listaEnsaladaQuinoa").hide(e);
+            contador = 0;
+        }
+    });
+
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonTacos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaTacosChilorio").show(e);
+            $("#listaTacosPilbil").show(e);
+            $("#listaTacosPollo").show(e);
+            $("#listaTacosVerdura").show(e);
+            $("#listaTacosAsada").show(e);
+            contador++;
+        } else {
+
+            $("#listaTacosChilorio").hide(e);
+            $("#listaTacosPilbil").hide(e);
+            $("#listaTacosPollo").hide(e);
+            $("#listaTacosVerdura").hide(e);
+            $("#listaTacosAsada").hide(e);
+            contador = 0;
+        }
+    });
+    
+
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonQuesadillas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaQuesadillasChilorio").show(e);
+            $("#listaQuesadillasPilbil").show(e);
+            $("#listaQuesadillasPollo").show(e);
+            $("#listaQuesadillasVerdura").show(e);
+            $("#listaQuesadillasAsada").show(e);
+            contador++;
+        } else {
+
+            $("#listaQuesadillasChilorio").hide(e);
+            $("#listaQuesadillasPilbil").hide(e);
+            $("#listaQuesadillasPollo").hide(e);
+            $("#listaQuesadillasVerdura").hide(e);
+            $("#listaQuesadillasAsada").hide(e);
+            contador = 0;
+        }
+    });
+});
+
