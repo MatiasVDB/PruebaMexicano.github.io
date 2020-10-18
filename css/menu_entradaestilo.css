@@ -472,6 +472,12 @@ a {
 			width: 30px;
 			height: 35px;
 		}
+		
+		.contenedorVerMiPedido{
+			
+			margin-top: 1em;
+		}
+		
 		.descripcionPlato {
 			max-width: 300px;
 			font-size: 0.7em;
@@ -541,7 +547,7 @@ a {
 			height: 110px;
 			margin-top: -10px;
 			grid-template-columns: 60px 60px 60px 60px;
-			grid-template-rows: 60px 60px 60px 60px;
+			grid-template-rows: 50px 50px;
 		}
 
 		.boton_menu {
@@ -566,7 +572,14 @@ a {
 			width: 70px;
 			height: 70px;
 		}
-
+		
+		.texto{
+			margin-top: -15px;
+			margin-left: 1.1em;
+			font-size: 0.5em;
+			
+		}
+		
 		p {
 			font-size: 0.8em;
 			max-width: 230px;
