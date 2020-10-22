@@ -170,6 +170,7 @@ button.boton_carrito:hover {
 	display: -ms-grid;
 	display: grid;
 	padding: 50px;
+	-ms-grid-row-span: 50px;
 	grid-template-columns: 60px 100px;
 	grid-template-rows: 28px;
 	-ms-grid-columns: 60px 100px;
