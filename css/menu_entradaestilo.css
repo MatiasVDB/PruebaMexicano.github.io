@@ -190,9 +190,9 @@ button.boton_carrito:hover {
 .productoTxt {
 	color: black;
 	font-weight: 400;
-	text-align: initial;
 	letter-spacing: 1px;
 	margin: 10px 0px;
+	width: 20px;
 }
 
 .descripcionTxt {
@@ -252,10 +252,7 @@ button.boton_carrito:hover {
 }
 
 .botonAgregarAlCarrito {
-	grid-row: 3/4;
-	grid-column: 3/4;
-	/*! align-self: baseline; */
-	width: 145px;
+	width: 130px;
 	height: 35px;
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
@@ -270,17 +267,15 @@ button.boton_carrito:hover {
 }
 
 .contenedorBotonesDobles {
-	grid-row: 2/3;
-	grid-column: 3/3;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
 .botonAgregarAlCarritoSimple {
 	grid-row: 3/4;
 	grid-column: 2/3;
-	width: 150px;
+	width: 130px;
 	height: 35px;
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
@@ -297,7 +292,7 @@ button.boton_carrito:hover {
 .botonAgregarAlCarritoDoble {
 	grid-row: 3/4;
 	grid-column: 2/3;
-	width: 150px;
+	width: 130px;
 	height: 35px;
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
@@ -396,13 +391,17 @@ a {
 	}
 
 	.botonAgregarAlCarrito {
-		align-self: end;
+		align-self: flex-end;
 	}
 	.botonAgregarAlCarritoSimple {
-		align-self: end;
+		align-self: flex-end;
 	}
 	.botonAgregarAlCarritoDoble {
-		align-self: end;
+		align-self: flex-end;
+	}
+
+	.contenedorBotonesDobles {
+		flex-direction: column;
 	}
 }
 
@@ -539,6 +538,18 @@ a {
 	.imagenBoton {
 		width: 70px;
 		height: 70px;
+	}
+
+	.botonAgregarAlCarrito {
+		width: 120px;
+	}
+
+	.botonAgregarAlCarritoSimple {
+		width: 120px;
+	}
+
+	.botonAgregarAlCarritoDoble {
+		width: 120px;
 	}
 
 	.texto {
