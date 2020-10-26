@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/Logo Mexicano.png">
-    <link rel="stylesheet" href="css/pedido_estilo.css" />
+    <link rel="stylesheet" href="css/estilo_pedido.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
 
     <div class="contenedorImagen">
 
-        <a href="./menu_Entrada_flex.html" class="botonIrMenuPrincipal"> <i class="fas fa-arrow-left"></i></a>
+        <a href="./menu_entrada.html" class="botonIrMenuPrincipal"> <i class="fas fa-arrow-left"></i></a>
 
 
         <p class="section-header">Pedido</p>
@@ -65,7 +65,7 @@
          
             <div class="cart-table cart-quantity">
                 
-                <input type="text" class="number-table" name="mesa" placeholder="Mesa" i>
+                <input type="text" class="number-table" name="mesa" placeholder="n° de mesa" i>
                 <?php
                 if (isset($_GET['error'])) {
                     if ($_GET['error'] == 'noMesa' || $_GET['error'] == 'ninguno') {
@@ -78,9 +78,9 @@
            <button class="botonBorrarPedidos" type="button"> <i class="fas fa-trash"></i></button>
 
             <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
+               <div> <strong class="cart-total-title">Total</strong> </div>
                 
-                <span class="cart-total-price" name="total">$0</span>
+                <div class="cart-total-price" name="total">$0</div>
                 <input type="number" class="inputTotal" hidden name="total">
             </div>
 

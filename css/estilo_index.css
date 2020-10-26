@@ -1,0 +1,532 @@
+/* Inicio página Home */
+
+body {
+	margin: 0px 0px 0px 0px;
+	background-color: rgba(241, 240, 232);
+}
+
+.contenedorHeaderFlex {
+	display: flex;
+	padding: 0.6em;
+	padding-bottom: 0em;
+	justify-content: space-between;
+	background-color: #717beb; /* Han blue #4467C4  #5d69ee  #515BD4  #3d88ee*/
+	align-content: center;
+	max-width: 100%;
+	height: auto;
+	opacity: 0.9;
+}
+
+.logoMexicano {
+	width: 200.43px;
+	height: 60.74px;
+}
+
+.grupoUno {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	align-items: initial;
+	margin-top: 0%;
+	margin-bottom: 0.4%;
+	margin-left: 0.8%;
+	min-width: 13em;
+}
+
+.grupoDos {
+	display: flex;
+	align-items: center;
+	letter-spacing: 30px;
+}
+
+#icono {
+	font-size: 1em;
+}
+
+#iconoInstagram:hover {
+	opacity: 1;
+	color: #f62e29 /*#ffea7f*/;
+}
+
+#iconoFacebook:hover {
+	opacity: 1;
+	color: #efce16 /* #83c3ff*/;
+}
+
+#iconoWhatsApp:hover {
+	opacity: 1;
+	color: #89e077;
+}
+
+.contenedorImagen {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	object-fit: fill;
+	filter: contrast(70%);
+}
+
+.contenedorImagen img {
+	width: 100%;
+	height: auto;
+}
+
+/* .tituloHome {
+  position: absolute;
+  width: 50%;
+  margin-bottom: 200px;
+  height: 3em;
+  padding: 0.6em;
+  align-self: center;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 5px;
+  color: rgb(255, 4, 4);
+  background-color: RGB(192, 236, 204);
+  
+} */
+
+.contenedorMapaDelSitio {
+	display: grid;
+	width: 100%;
+	background-color: #f9f9f9;
+}
+
+.frase {
+	box-sizing: border-box;
+	max-width: 85%;
+	margin-top: 40px;
+	margin-left: 8.7%;
+	margin-right: 8.7%;
+	text-align: center;
+	font-family: "Cormorant", serif;
+	letter-spacing: 1.4px;
+	grid-row: 1/2;
+}
+
+.contenedorColumnas {
+	display: grid;
+	width: 80%;
+	height: auto;
+	grid-template-columns: 0.5fr 0.5fr auto;
+	grid-template-rows: auto;
+	grid-row-gap: 50px;
+	/* max-width: 50%; */
+	justify-content: space-around;
+	margin: 80px auto;
+	box-sizing: content-box;
+}
+
+.contenedorBotones {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 328px;
+	height: 400px;
+	box-sizing: border-box;
+}
+
+#contenedorBotonMenu {
+	grid-row: 1/2;
+	grid-column: 1/2;
+	border: solid 3px #f62e29;
+}
+
+#contenedorBotonReserva {
+	/* grid-row: 1/2;
+	grid-column: 2/3; */
+	border: solid 3px #efce16;
+	padding: 0;
+}
+
+#contenedorBotonTakeAway {
+	/* grid-row: 1/2;
+	grid-column: 3/4; */
+	border: solid 3px #89e077;
+}
+
+.columna {
+	width: 300px;
+	height: 200px;
+	border-radius: 1%;
+	opacity: 0.8;
+}
+
+#columnaUno {
+	background-image: url(../img/menu.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#columnaDos {
+	background-image: url(../img/reserva.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#columnaTres {
+	background-image: url(../img/takeAway.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.textoColumna {
+	color: rgb(45, 45, 45);
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 1500;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.8em;
+}
+
+.descripcionColumna {
+	max-width: 300px;
+	font-style: italic;
+	font-family: "Cormorant Garamond", serif;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: -10px;
+}
+
+.contenedorPopUp{
+	width: 100%;
+	height: 100%; 
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	box-sizing: border-box;
+	display: none;
+	
+}
+
+.popUp{
+	width: 250px;
+	height: 300px;
+	border-radius: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+	background-color: #f9f9f9;
+	border: solid 4px #717beb ;
+	position: relative;
+	text-align: center;
+	font-family: "Cormorant Garamond", serif;
+
+}
+#imagenPopUp{
+	padding-top: 10px;
+	width:250px;
+	height:100px; 
+
+}
+#whatappPopUp{
+	text-decoration: none;
+	color:#6add52;
+	padding-top: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.cerrarPopUp{
+	position: absolute;
+	font-size: 35px;
+	top:0;
+	right: 9px;
+	margin-top: none;
+	margin-right: none;
+	transform: rotate(45deg);
+	cursor: pointer;
+
+}
+
+.txtMapaDelSitio {
+	width: 70%;
+	justify-self: center;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.5em;
+}
+
+.txtMapaDelSitio::first-line {
+	font-size: 1.6em;
+}
+
+.txtNumeros {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 0.8em;
+}
+
+.mapaDelSitio {
+	width: 90%;
+	justify-self: center;
+}
+
+.contenedorFooterFlex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0px 6em;
+	width: 100%;
+	height: 150px;
+	margin-top: 50px;
+	background-color: #717beb;
+}
+
+.fab {
+	text-decoration: none;
+	letter-spacing: 30px;
+	font-size: 1.4em;
+	color: white;
+}
+.contenedorRedes {
+	margin-top: 16px;
+}
+
+.logoMexicanoFooter {
+	/*border: solid black 10px;*/
+	width: 264px;
+	height: 92px;
+}
+
+/* Efectos página home */
+
+.columna:hover {
+	box-shadow: 0px 5px 5px gray;
+	margin-top: -2px;
+	opacity: 1;
+}
+
+.fa-instagram:hover {
+	color: #f62e29;
+}
+
+.fa-facebook-f:hover {
+	color: #efce16;
+}
+
+.fa-whatsapp:hover {
+	color: #89e077;
+}
+
+@media screen and (max-width: 1100px) {
+	.contenedorImagen {
+		background-position: top;
+	}
+
+	.contenedorBotones {
+		width: 355px;
+		height: 450px;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.contenedorImagen {
+		width: 100%;
+		height: 600px;
+		box-sizing: border-box;
+		object-fit: fill;
+	}
+
+	.contenedorImagen img {
+		width: 100%;
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.contenedorColumnas {
+		grid-template-rows: auto;
+		grid-template-columns: auto;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.contenedorHeaderFlex {
+		flex-direction: row;
+		padding: 0em;
+		padding-bottom: 0em;
+		align-items: center;
+	}
+	.grupoUno {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		min-width: 13em;
+	}
+	.grupoDos {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		font-style: normal;
+	}
+	/*  .tituloHome {
+        padding: 0em 0em 0em 0.6em;
+        margin: 0.4em 0em 0em 0em;
+        margin-bottom: 12.5em;
+        font-size: 1em;
+	} */
+
+	.txtMapaDelSitio {
+		font-size: 1em;
+	}
+
+	.txtMapaDelSitio::first-line {
+		font-size: 1.5em;
+	}
+
+	.mapaDelSitio {
+		width: 100%;
+	}
+	.txtMapaDelSitio {
+		width: 100%;
+	}
+
+	.listaUno {
+		font-size: 0.9em;
+	}
+	.listaDos {
+		margin: auto;
+		grid-row-start: 2;
+		grid-column-start: 1;
+		font-size: 1.5em;
+	}
+
+	.contenedorFooterFlex {
+		flex-direction: column;
+		height: auto;
+		padding: 1em 1em;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#icono {
+		font-size: 1.1em;
+		letter-spacing: 20px;
+	}
+	.fab {
+		font-size: 1em;
+		letter-spacing: 5px;
+	}
+
+	/* Efectos pagina home */
+	.columna:hover {
+		margin-top: 1px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.logoMexicano {
+		width: 180.38px;
+		height: 54.66px;
+		margin-top: 3px;
+	}
+
+	.txtMapaDelSitio {
+		font-size: 0.9em;
+	}
+
+	.txtMapaDelSitio::first-line {
+		font-size: 1.4em;
+	}
+
+	#icono {
+		font-size: 1.1em;
+		letter-spacing: 14px;
+	}
+}
+
+@media screen and (max-width: 375px) and (min-width: 360px) {
+	.logoMexicano {
+		width: 162.34px;
+		height: 49.19px;
+		margin-top: 3px;
+	}
+
+	.grupoUno {
+		font-size: 0.8em;
+	}
+
+	.grupoDos {
+		letter-spacing: 15px;
+	}
+
+	.listaUno {
+		font-size: 0.6em;
+	}
+	.listaDos {
+		margin: auto;
+		grid-row-start: 2;
+		grid-column-start: 1;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.contenedorBotones {
+		width: 330px;
+		height: 400px;
+	}
+
+	.txtMapaDelSitio {
+		font-size: 0.8em;
+	}
+
+	.txtMapaDelSitio::first-line {
+		font-size: 1.3em;
+	}
+
+	.txtNumeros {
+		font-size: 0.5;
+	}
+
+	.contenedorFooterFlex {
+		padding: 2em 2em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.logoMexicano {
+		width: 146.11px;
+		height: 44.27px;
+		margin-top: 3px;
+	}
+
+	.grupoUno {
+		font-size: 0.6em;
+	}
+
+	.grupoDos {
+		letter-spacing: 8px;
+		font-size: 0.6em;
+	}
+
+	.contenedorBotones {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 280px;
+		height: 350px;
+	}
+
+	.columna {
+		width: 230px;
+		height: 140px;
+	}
+
+	.descripcionColumna {
+		font-size: 0.8em;
+		max-width: 220px;
+	}
+
+}
+
+/* Fin página Home */
