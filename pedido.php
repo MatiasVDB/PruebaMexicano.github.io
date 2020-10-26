@@ -29,7 +29,7 @@
 
     <div class="contenedorImagen">
 
-        <a href="./menu_Entrada.html" class="botonIrMenuPrincipal"> <i class="fas fa-arrow-left"></i></a>
+        <a href="./menu_Entrada_flex.html" class="botonIrMenuPrincipal"> <i class="fas fa-arrow-left"></i></a>
 
 
         <p class="section-header">Pedido</p>
@@ -45,9 +45,9 @@
             <table class="tablaPedidos">
                 <tr class="headerCarrito">
                     <th class="platoTitulo">Plato</th>
-                    <th class="valorTitulo">Valor</th>
+                    <th class="valorTitulo" id= "valor">Valor</th>
                     <th class="cantidadTitulo">Cantidad</th>
-                    <th class="opcionesTitulo">Opciones</th>
+                    <th class="opcionesTitulo" id = "opciones">Opciones</th>
 
                 </tr>
 
@@ -86,7 +86,7 @@
 
             </div>
 
-            <div> 
+            <div class= "contenedorBotonPedir"> 
 
             <input class="btn btn-primary btn-purchase" type="submit" value="Pedir">
 
@@ -119,14 +119,14 @@
 						</a>
 						<a
 							href="https://www.facebook.com/elmexicanobariloche"
-							target="_blank"
+							target="blank"
 							class="fab fa-facebook-f"
 							id="iconoFacebook"
 						>
 						</a>
 						<a
 							href="https://api.whatsapp.com/send?phone=5492944958019&text=&source=&data=&app_absent="
-							target="_blank"
+							target="blank"
 							class="fab fa-whatsapp"
 							id="iconoWhatsApp"
 						>

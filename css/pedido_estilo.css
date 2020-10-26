@@ -40,9 +40,23 @@ td {
 .headerCarrito {
 	font-family: "Bebas Neue", cursive;
 	color: #717beb;
-	letter-spacing: 3px;
-	font-size: 1.2em;
+	letter-spacing: 2px;
+	text-shadow:  white 2px 5px;
+	margin: none 4px ;
+	font-size: 1.1em;
 }
+
+#valor{
+
+	color:#ffc530;
+	padding-right: 4px;
+}
+
+#opciones{
+
+	color:#ffc530;
+}
+
 
 .tablaPedidos {
 	/* border-bottom: gainsboro solid 1px; */
@@ -81,7 +95,8 @@ td {
 	display: flex;
 	max-width: 80%;
 	justify-content: space-between;
-	margin: -40px auto;
+	margin: 0px auto;
+
 }
 
 .error-mesa {
@@ -91,7 +106,7 @@ td {
 }
 
 .cart-total {
-	margin-right: 65px;
+	margin-right: 100px;
 }
 
 .cart-total-title {
@@ -138,9 +153,11 @@ td {
 	background-color: #77dd77;
 }
 
+
 .btn-purchase {
-	position: absolute;
+
 	right: 0;
+	bottom: 0px;
 	width: 30%;
 	margin: 75px 130px;
 	height: 60px;
@@ -161,21 +178,20 @@ td {
 	width: 100%;
 	height: 40px;
 	background-color: #717beb;
-	margin-top: 60px;
-	position: absolute;
-	bottom: 50px;
+	margin-top: 0px;
+
 }
 
 .contenedorGrid {
 	display: flex;
 	width: 100%;
-	margin: -150px auto;
+	margin: 0px auto;
 	background-color: #f9f9f9;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	bottom: 0px;
+
+
 }
 
 .elementosFooter {
@@ -226,3 +242,4 @@ a {
 	opacity: 1;
 	color: #89e077;
 }
+

@@ -129,44 +129,176 @@ $(document).ready(function (e) {
 
     );
     $("#Chocolatosa").toggle(
-    
+
     );
-     $("#Cheescake").toggle(
-    
-     );
-     $("#DonasMexicanas").toggle(
-    
+    $("#Cheescake").toggle(
+
+    );
+    $("#DonasMexicanas").toggle(
+
     );
     $("#Churros").toggle(
-    
+
     );
-    
+
     $("#Medialunas").toggle(
 
     );
     $("#tortasDeJamon ").toggle(
-        
+
     );
     $("#tostadas").toggle(
-        
+
     );
     $("#platoDeFrutas").toggle(
-        
+
     );
     $("#HuevosRancheros").toggle(
-    
-    );
-        
-    $("#HuevosDivorciados").toggle(
-    
-    );
-    $("#Chilaquiles").toggle(
-            
-    );
-    $("#desayunoVoladorDelDia").toggle(
-            
+
     );
 
+    $("#HuevosDivorciados").toggle(
+
+    );
+    $("#Chilaquiles").toggle(
+
+    );
+    $("#desayunoVoladorDelDia").toggle(
+
+    );
+    $("#Moyotes").toggle(
+
+    );
+
+    $("#tostadaFranchuta").toggle(
+
+    );
+
+    $("#ristrettoMacho").toggle(
+
+    );
+    $("#expresoPorteno").toggle(
+
+    );
+    $("#cafePincheGringo").toggle(
+
+    );
+    $("#cafeLatte").toggle(
+
+    );
+    $("#chocolateTradicional").toggle(
+
+    );
+    $("#chocolateEspecial").toggle(
+
+    );
+    $("#capuchinoTradicional").toggle(
+
+    );
+    $("#CapuchinoALaMexicana").toggle(
+
+    );
+    $("#te").toggle(
+
+    );
+    $("#cafeconLeche").toggle(
+
+    );
+
+    $("#listaMargarita").toggle(
+
+    );
+    $("#listaCampari").toggle(
+
+    );
+    $("#listaNegroni").toggle(
+
+    );
+    $("#listaMojito").toggle(
+
+    );
+    $("#listaGinTonic").toggle(
+
+    );
+    $("#listaFernet").toggle(
+
+    );
+    $("#listaCubaLibre").toggle(
+
+    );
+    $("#listaCaipi").toggle(
+
+    );
+
+    $("#listaTrivento1").toggle(
+
+    );
+    $("#listaTrivento2").toggle(
+
+    );
+    $("#listaTrivento3").toggle(
+
+    );
+    $("#listaTrivento4").toggle(
+
+    );
+    $("#listaTrivento5").toggle(
+
+    );
+    $("#listaTrivento6").toggle(
+
+    );
+    $("#listaTrivento7").toggle(
+
+    );
+    $("#listaTrivento8").toggle(
+
+    );
+    $("#listaTrivento9").toggle(
+
+    );
+    $("#listaTrivento10").toggle(
+
+    );
+
+    $("#listaSanHuberto1").toggle(
+
+    );
+    $("#listaSanHuberto2").toggle(
+
+    );
+    $("#listaSanHuberto3").toggle(
+
+    );
+    $("#listaSanHuberto4").toggle(
+
+    );
+    $("#listaSanHuberto5").toggle(
+
+    );
+    $("#listaSanHuberto6").toggle(
+
+    );
+    $("#listaSanHuberto7").toggle(
+
+    );
+
+    $("#listaSueco").toggle(
+
+    );
+    $("#listaPollo").toggle(
+
+    );
+
+    $("#pizzaMargarita").toggle(
+
+    );
+    $("#pizzaMexicana").toggle(
+
+    );
+    $("#pizzaTocino").toggle(
+
+    );
 
 });
 
@@ -299,6 +431,7 @@ $(document).ready(function (e) {
 
 });
 
+// READY ENSALADAS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonEnsaladas").click(function (e) {
@@ -322,6 +455,7 @@ $(document).ready(function (e) {
 
 });
 
+// READY TACOS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonTacos").click(function (e) {
@@ -348,6 +482,7 @@ $(document).ready(function (e) {
 
 });
 
+// READY QUESADILLAS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonQuesadillas").click(function (e) {
@@ -372,6 +507,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY FLAUTAS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonFlautas").click(function (e) {
@@ -394,28 +530,7 @@ $(document).ready(function (e) {
     });
 });
 
-$(document).ready(function (e) {
-    var contador = 0;
-    $("#contenedorBotonFlautas").click(function (e) {
-
-        if (contador == 0) {
-
-            $("#listaFlautasRes").show(e);
-            $("#listaFlautasPollo").show(e);
-            $("#listaFlautasPuerco").show(e);
-
-            contador++;
-        } else {
-
-            $("#listaFlautasRes").hide(e);
-            $("#listaFlautasPollo").hide(e);
-            $("#listaFlautasPuerco").hide(e);
-
-            contador = 0;
-        }
-    });
-});
-
+// READY REFRESCOS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonRefrescos").click(function (e) {
@@ -438,6 +553,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY NACHOS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonNachos").click(function (e) {
@@ -461,6 +577,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY CERVEZAS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonCervezas").click(function (e) {
@@ -486,6 +603,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY PASTELERIA
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonPasteleria").click(function (e) {
@@ -520,6 +638,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY DESAYUNOS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonDesayunos").click(function (e) {
@@ -530,6 +649,8 @@ $(document).ready(function (e) {
             $("#HuevosDivorciados").show(e);
             $("#Chilaquiles").show(e);
             $("#desayunoVoladorDelDia").show(e);
+            $("#Moyotes").show(e);
+            $("#tostadaFranchuta").show(e);
 
             contador++;
         } else {
@@ -538,7 +659,192 @@ $(document).ready(function (e) {
             $("#HuevosDivorciados").hide(e);
             $("#Chilaquiles").hide(e);
             $("#desayunoVoladorDelDia").hide(e);
+            $("#Moyotes").hide(e);
+            $("#tostadaFranchuta").hide(e);
+
             contador = 0;
         }
     });
 });
+
+// READY CAFETERIA
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonCafeteria").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#expresoPorteno").show(e);
+            $("#ristrettoMacho").show(e);
+            $("#cafePincheGringo").show(e);
+            $("#cafeconLeche").show(e);
+            $("#cafeLatte").show(e);
+            $("#chocolateTradicional").show(e);
+            $("#chocolotaEspecial").show(e);
+            $("#capuchinoTradicional").show(e);
+            $("#CapuchinoALaMexicana").show(e);
+            $("#te").show(e);
+
+            contador++;
+        } else {
+
+            $("#expresoPorteno").hide(e);
+            $("#ristrettoMacho").hide(e);
+            $("#cafePincheGringo").hide(e);
+            $("#cafeconLeche").hide(e);
+            $("#cafeLatte").hide(e);
+            $("#chocolateTradicional").hide(e);
+            $("#chocolotaEspecial").hide(e);
+            $("#capuchinoTradicional").hide(e);
+            $("#CapuchinoALaMexicana").hide(e);
+            $("#te").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+// READY TRAGOS
+$(document).ready(function (e) {
+
+    var contador = 0;
+    $("#contenedorBotonTragos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaMojito").show(e);
+            $("#listaCaipi").show(e);
+            $("#listaCubaLibre").show(e);
+            $("#listaFernet").show(e);
+            $("#listaGinTonic").show(e);
+            $("#listaNegroni").show(e);
+            $("#listaCampari").show(e);
+            $("#listaMargarita").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaMojito").hide(e);
+            $("#listaCaipi").hide(e);
+            $("#listaCubaLibre").hide(e);
+            $("#listaFernet").hide(e);
+            $("#listaGinTonic").hide(e);
+            $("#listaNegroni").hide(e);
+            $("#listaCampari").hide(e);
+            $("#listaMargarita").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+// READY TRIVENTO
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonTrivento").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaTrivento1").show(e);
+            $("#listaTrivento2").show(e);
+            $("#listaTrivento3").show(e);
+            $("#listaTrivento4").show(e);
+            $("#listaTrivento5").show(e);
+            $("#listaTrivento6").show(e);
+            $("#listaTrivento7").show(e);
+            $("#listaTrivento8").show(e);
+            $("#listaTrivento9").show(e);
+            $("#listaTrivento10").show(e);
+
+
+            contador++;
+        } else {
+
+            $("#listaTrivento1").hide(e);
+            $("#listaTrivento2").hide(e);
+            $("#listaTrivento3").hide(e);
+            $("#listaTrivento4").hide(e);
+            $("#listaTrivento5").hide(e);
+            $("#listaTrivento6").hide(e);
+            $("#listaTrivento7").hide(e);
+            $("#listaTrivento8").hide(e);
+            $("#listaTrivento9").hide(e);
+            $("#listaTrivento10").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+// READY SAN HUEBERTO
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonSanHuberto").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaSanHuberto1").show(e);
+            $("#listaSanHuberto2").show(e);
+            $("#listaSanHuberto3").show(e);
+            $("#listaSanHuberto4").show(e);
+            $("#listaSanHuberto5").show(e);
+            $("#listaSanHuberto6").show(e);
+            $("#listaSanHuberto7").show(e);
+
+
+            contador++;
+        } else {
+
+            $("#listaSanHuberto1").hide(e);
+            $("#listaSanHuberto2").hide(e);
+            $("#listaSanHuberto3").hide(e);
+            $("#listaSanHuberto4").hide(e);
+            $("#listaSanHuberto5").hide(e);
+            $("#listaSanHuberto6").hide(e);
+            $("#listaSanHuberto7").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+//READY PLATOS ESPECIALES
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPlatos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaSueco").show(e);
+            $("#listaPollo").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaSueco").hide(e);
+            $("#listaPollo").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+// READY PIZZAS
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPizzas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#pizzaMargarita").show(e);
+            $("#pizzaMexicana").show(e);
+            $("#pizzaTocino").show(e);
+
+            contador++;
+        } else {
+
+            $("#pizzaMargarita").hide(e);
+            $("#pizzaMexicana").hide(e);
+            $("#pizzaTocino").hide(e);
+
+            contador = 0;
+        }
+    });
+})
