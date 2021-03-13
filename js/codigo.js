@@ -39,6 +39,9 @@ $(document).ready(function (e) {
     $("#listaSopadeLima").toggle(
 
     );
+    $("#listaSopadeLima2").toggle(
+
+    );
 
     $("#listaEnsaladaMexicana").toggle(
 
@@ -59,6 +62,9 @@ $(document).ready(function (e) {
 
     );
     $("#listaTacosPollo").toggle(
+
+    );
+    $("#listaTacosPollo2").toggle(
 
     );
     $("#listaTacosVerdura").toggle(
@@ -82,6 +88,9 @@ $(document).ready(function (e) {
     $("#listaQuesadillasAsada").toggle(
 
     );
+    $("#listaQuesadillasAsada2").toggle(
+
+    );
     $("#listaFlautasRes").toggle(
 
     );
@@ -89,6 +98,18 @@ $(document).ready(function (e) {
 
     );
     $("#listaFlautasPuerco").toggle(
+
+    );
+    $("#listaFlautasRes1").toggle(
+
+    );
+    $("#listaFlautasPollo1").toggle(
+
+    );
+    $("#listaFlautasPuerco1").toggle(
+
+    );
+    $("#listaFlautasPuercoP1").toggle(
 
     );
     $("#listaPepsi").toggle(
@@ -115,7 +136,19 @@ $(document).ready(function (e) {
     $("#listaCorona").toggle(
 
     );
-    $("#listaPatagonia").toggle(
+    $("#listaPatagonia1").toggle(
+
+    );
+    $("#listaPatagonia2").toggle(
+
+    );
+    $("#listaPatagonia3").toggle(
+
+    );
+    $("#listaPatagonia4").toggle(
+
+    );
+    $("#listaPatagonia5").toggle(
 
     );
     $("#listaStella").toggle(
@@ -147,6 +180,18 @@ $(document).ready(function (e) {
     $("#tortasDeJamon ").toggle(
 
     );
+    $("#tortasDeJamonP ").toggle(
+
+    );
+    $("#tortasDeJamonPQ ").toggle(
+
+    );
+    $("#tortasDeJamonB ").toggle(
+
+    );
+    $("#tortasDeJamonV ").toggle(
+
+    );
     $("#tostadas").toggle(
 
     );
@@ -161,6 +206,9 @@ $(document).ready(function (e) {
 
     );
     $("#Chilaquiles").toggle(
+
+    );
+    $("#Chilaquiles1").toggle(
 
     );
     $("#desayunoVoladorDelDia").toggle(
@@ -215,6 +263,12 @@ $(document).ready(function (e) {
 
     );
     $("#listaMojito").toggle(
+
+    );
+    $("#listaMojito2").toggle(
+
+    );
+    $("#listaMojito3").toggle(
 
     );
     $("#listaGinTonic").toggle(
@@ -282,6 +336,9 @@ $(document).ready(function (e) {
     $("#listaSanHuberto7").toggle(
 
     );
+    $("#listaSanHuberto8").toggle(
+
+    );
 
     $("#listaSueco").toggle(
 
@@ -312,12 +369,15 @@ $(document).ready(function (e) {
         if (contador == 0) {
             $("#listaNachosZapatistas").show(e);
             $("#listaNachisimos").show(e);
+            $("#Chilaquiles").show(e);
+            $("#Cheescake").show(e);
 
             contador++;
         } else {
             $("#listaNachosZapatistas").hide(e);
             $("#listaNachisimos").hide(e);
-
+            $("#Chilaquiles").hide(e);
+            $("#Cheescake").hide(e);
             contador = 0;
         }
     });
@@ -418,12 +478,15 @@ $(document).ready(function (e) {
 
             $("#listaSopasAzteca").show(e);
             $("#listaSopadeLima").show(e);
+            $("#listaSopadeLima2").show(e);
 
             contador++;
         } else {
 
             $("#listaSopasAzteca").hide(e);
             $("#listaSopadeLima").hide(e);
+            $("#listaSopadeLima2").hide(e);
+
 
             contador = 0;
         }
@@ -467,6 +530,7 @@ $(document).ready(function (e) {
             $("#listaTacosPollo").show(e);
             $("#listaTacosVerdura").show(e);
             $("#listaTacosAsada").show(e);
+            $("#listaTacosPollo2").show(e);
             contador++;
         } else {
 
@@ -475,6 +539,7 @@ $(document).ready(function (e) {
             $("#listaTacosPollo").hide(e);
             $("#listaTacosVerdura").hide(e);
             $("#listaTacosAsada").hide(e);
+            $("#listaTacosPollo2").hide(e);
             contador = 0;
         }
     });
@@ -494,6 +559,7 @@ $(document).ready(function (e) {
             $("#listaQuesadillasPollo").show(e);
             $("#listaQuesadillasVerdura").show(e);
             $("#listaQuesadillasAsada").show(e);
+            $("#listaQuesadillasAsada2").show(e);
             contador++;
         } else {
 
@@ -502,6 +568,7 @@ $(document).ready(function (e) {
             $("#listaQuesadillasPollo").hide(e);
             $("#listaQuesadillasVerdura").hide(e);
             $("#listaQuesadillasAsada").hide(e);
+            $("#listaQuesadillasAsada2").hide(e);
             contador = 0;
         }
     });
@@ -524,6 +591,30 @@ $(document).ready(function (e) {
             $("#listaFlautasRes").hide(e);
             $("#listaFlautasPollo").hide(e);
             $("#listaFlautasPuerco").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonFlautas1").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaFlautasRes1").show(e);
+            $("#listaFlautasPollo1").show(e);
+            $("#listaFlautasPuerco1").show(e);
+            $("#listaFlautasPuercoP1").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaFlautasRes1").hide(e);
+            $("#listaFlautasPollo1").hide(e);
+            $("#listaFlautasPuerco1").hide(e);
+            $("#listaFlautasPuercoP1").hide(e);
 
             contador = 0;
         }
@@ -585,7 +676,6 @@ $(document).ready(function (e) {
         if (contador == 0) {
 
             $("#listaCorona").show(e);
-            $("#listaPatagonia").show(e);
             $("#listaStella").show(e);
             $("#listaQuilmes").show(e);
 
@@ -594,10 +684,32 @@ $(document).ready(function (e) {
         } else {
 
             $("#listaCorona").hide(e);
-            $("#listaPatagonia").hide(e);
+
             $("#listaStella").hide(e);
             $("#listaQuilmes").hide(e);
 
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPatagonia").click(function (e) {
+
+        if (contador == 0) {
+            $("#listaPatagonia1").show(e);
+            $("#listaPatagonia2").show(e);
+            $("#listaPatagonia3").show(e);
+            $("#listaPatagonia4").show(e);
+            $("#listaPatagonia5").show(e);
+            contador++;
+        } else {
+            $("#listaPatagonia1").hide(e);
+            $("#listaPatagonia2").hide(e);
+            $("#listaPatagonia3").hide(e);
+            $("#listaPatagonia4").hide(e);
+            $("#listaPatagonia5").hide(e);
             contador = 0;
         }
     });
@@ -612,11 +724,10 @@ $(document).ready(function (e) {
 
             $("#Marquise").show(e);
             $("#Chocolatosa").show(e);
-            $("#Cheescake").show(e);
+
             $("#DonasMexicanas").show(e);
-            $("#Churros").show(e);
-            $("#Medialunas").show(e);
-            $("#tortasDeJamon ").show(e);
+
+
             $("#tostadas").show(e);
             $("#platoDeFrutas").show(e);
             contador++;
@@ -624,11 +735,10 @@ $(document).ready(function (e) {
 
             $("#Marquise").hide(e);
             $("#Chocolatosa").hide(e);
-            $("#Cheescake").hide(e);
+
             $("#DonasMexicanas").hide(e);
-            $("#Churros").hide(e);
-            $("#Medialunas").hide(e);
-            $("#tortasDeJamon ").hide(e);
+
+
             $("#tostadas").hide(e);
             $("#platoDeFrutas").hide(e);
 
@@ -644,24 +754,35 @@ $(document).ready(function (e) {
     $("#contenedorBotonDesayunos").click(function (e) {
 
         if (contador == 0) {
-
+            $("#Churros").show(e);
+            $("#Medialunas").show(e);
             $("#HuevosRancheros").show(e);
             $("#HuevosDivorciados").show(e);
-            $("#Chilaquiles").show(e);
+            $("#Chilaquiles1").show(e);
             $("#desayunoVoladorDelDia").show(e);
             $("#Moyotes").show(e);
             $("#tostadaFranchuta").show(e);
+            $("#tortasDeJamon ").show(e);
+            $("#tortasDeJamonP ").show(e);
+            $("#tortasDeJamonPQ ").show(e);
+            $("#tortasDeJamonB ").show(e);
+            $("#tortasDeJamonV ").show(e);
 
             contador++;
         } else {
-
+            $("#Churros").hide(e);
+            $("#Medialunas").hide(e);
             $("#HuevosRancheros").hide(e);
             $("#HuevosDivorciados").hide(e);
-            $("#Chilaquiles").hide(e);
+            $("#Chilaquiles1").hide(e);
             $("#desayunoVoladorDelDia").hide(e);
             $("#Moyotes").hide(e);
             $("#tostadaFranchuta").hide(e);
-
+            $("#tortasDeJamon ").hide(e);
+            $("#tortasDeJamonP ").hide(e);
+            $("#tortasDeJamonPQ ").hide(e);
+            $("#tortasDeJamonB ").hide(e);
+            $("#tortasDeJamonV ").hide(e);
             contador = 0;
         }
     });
@@ -712,6 +833,8 @@ $(document).ready(function (e) {
         if (contador == 0) {
 
             $("#listaMojito").show(e);
+            $("#listaMojito2").show(e);
+            $("#listaMojito3").show(e);
             $("#listaCaipi").show(e);
             $("#listaCubaLibre").show(e);
             $("#listaFernet").show(e);
@@ -724,6 +847,8 @@ $(document).ready(function (e) {
         } else {
 
             $("#listaMojito").hide(e);
+            $("#listaMojito2").hide(e);
+            $("#listaMojito3").hide(e);
             $("#listaCaipi").hide(e);
             $("#listaCubaLibre").hide(e);
             $("#listaFernet").hide(e);
@@ -787,7 +912,7 @@ $(document).ready(function (e) {
             $("#listaSanHuberto5").show(e);
             $("#listaSanHuberto6").show(e);
             $("#listaSanHuberto7").show(e);
-
+            $("#listaSanHuberto8").show(e);
 
             contador++;
         } else {
@@ -799,6 +924,7 @@ $(document).ready(function (e) {
             $("#listaSanHuberto5").hide(e);
             $("#listaSanHuberto6").hide(e);
             $("#listaSanHuberto7").hide(e);
+            $("#listaSanHuberto8").hide(e);
 
             contador = 0;
         }
