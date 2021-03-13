@@ -55,7 +55,7 @@
 
 <div class="table-responsive">
 
-<table class="table tablaPedidos table-sm">
+<table class="table table-borderless table-sm tablaPedidos">
   <thead>
     <tr class = "headerCarrito"> 
       <th scope="col">Plato</th>
@@ -102,9 +102,9 @@
             <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
 
-  <div class="col-xs-2">
+  <div class="col-sm-2">
     <label for="mesa" class="form-label">Número de mesa</label>
-    <input type="number" class="number-table form-control" name="mesa" placeholder="Ingrese el número">
+    <input type="number" class="number-table form-control" name="mesa" placeholder="Ingrese el n°">
                 <?php
                 if (isset($_GET['error'])) {
                     if ($_GET['error'] == 'noMesa' || $_GET['error'] == 'ninguno') {
@@ -259,7 +259,7 @@ justify-content: center!important;
     transition: all 0.2s;
     letter-spacing: 1px;
    
-}
+} 
 
 .botonBorrarPedidos:hover{
 
@@ -349,6 +349,14 @@ a {
 .card-footer{
 
     background-color: #717beb;
+}
+
+@media (max-width: 576px) { 
+.form-control{
+
+  width: 60%;
+}
+
 }
 
 </style>
