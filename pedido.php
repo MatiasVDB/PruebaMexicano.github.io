@@ -104,7 +104,7 @@
 
   <div class="col-sm-2">
     <label for="mesa" class="form-label">Número de mesa</label>
-    <input type="number" class="number-table form-control" name="mesa" placeholder="Ingrese el n°">
+    <input type="number" class="number-table form-control" id="numeroMesa" name="mesa" placeholder="Ingrese el número">
                 <?php
                 if (isset($_GET['error'])) {
                     if ($_GET['error'] == 'noMesa' || $_GET['error'] == 'ninguno') {
@@ -158,7 +158,7 @@
 
         
 
-        <footer >
+        <footer>
 
 
 
@@ -206,6 +206,20 @@
    
 </body>
 
+
+<script> let numeroDeMesa = document.getElementById("numeroMesa");
+
+
+if(window.matchMedia("(max-width: 400px)").matches){
+ 
+    numeroDeMesa.placeholder = "Ingrese n°";
+    numeroDeMesa.style.width = "55%";
+    
+}
+
+
+</script>
+
 <style>
 
 
@@ -216,6 +230,7 @@ body{
   min-height: 100vh;
   flex-wrap: wrap;
 }
+
 footer {
 
 line-height: 4;
@@ -289,19 +304,16 @@ justify-content: center!important;
   background-color: #268b26;
 }
 
-.inputQuitar{
 
-  padding: 0.35em 1.3em;
+
+.table  .inputQuitar {
+
+    
     border: 0.1em solid gray;
-    /* margin: 0em 2em; */
     border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: #000000;
-    background-color: #77dd77;
-    text-align: center;
-    transition: all 0.2s;
+  
+    background-color: red;
+  
     letter-spacing: 1px;
 }
 
@@ -351,14 +363,12 @@ a {
     background-color: #717beb;
 }
 
-@media (max-width: 576px) { 
-.form-control{
 
-  width: 60%;
-}
 
-}
+
 
 </style>
+
+
 
 </html>
