@@ -53,6 +53,8 @@
 
 <form action="script_pedido.php" method="POST">
 
+<div class="container">
+
 <div class="table-responsive">
 
 <table class="table table-borderless table-sm tablaPedidos">
@@ -70,21 +72,8 @@
     
 </div>
 
+</div>
 
-    <!-- <form action="script_pedido.php" method="POST">
-        <section class="container content-section">
-
-            <table class="tablaPedidos">
-                <tr class="headerCarrito">
-                    <th class="platoTitulo">Plato</th>
-                    <th class="valorTitulo" id= "valor">Valor</th>
-                    <th class="cantidadTitulo">Cantidad</th>
-                    <th class="opcionesTitulo" id = "opciones">Opciones</th>
-
-                </tr>
-
-              
-            </table> -->
                 <!-- <?php
                 if (isset($_GET['error'])) {
                     if ($_GET['error'] == 'noPlatos' || $_GET['error'] == 'ninguno') {
@@ -98,7 +87,7 @@
             <div class="cart-table cart-quantity">
 
 
-
+<div class="container">
             <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
 
@@ -141,6 +130,9 @@
   </li>
 
 </ul>
+
+</div>
+
                
             </div>
 
@@ -157,10 +149,7 @@
             
 
         
-
         <footer>
-
-
 
         <div class="card text-center">
  
@@ -205,20 +194,6 @@
         </footer>
    
 </body>
-
-
-<script> let numeroDeMesa = document.getElementById("numeroMesa");
-
-
-if(window.matchMedia("(max-width: 400px)").matches){
- 
-    numeroDeMesa.placeholder = "Ingrese n°";
-    numeroDeMesa.style.width = "55%";
-    
-}
-
-
-</script>
 
 <style>
 
@@ -304,17 +279,27 @@ justify-content: center!important;
   background-color: #268b26;
 }
 
+.inputCantidad{
 
+  text-align: center;
+}
 
 .table  .inputQuitar {
 
     
     border: 0.1em solid gray;
     border-radius: 0.12em;
-  
+    color: black;
     background-color: red;
   
     letter-spacing: 1px;
+}
+
+.inputQuitar:hover{
+
+color: white;
+background-color: #c51f1b;
+
 }
 
 .card-body{
@@ -363,11 +348,30 @@ a {
     background-color: #717beb;
 }
 
-
-
-
-
 </style>
+
+<script> 
+
+document.addEventListener("DOMContentLoaded", function () { 
+
+  let inputCantidad = document.getElementById("inputDeCantidad");
+  let numeroDeMesa = document.getElementById("numeroMesa");
+
+
+
+if(window.matchMedia("(max-width: 568px)").matches){
+ 
+    inputCantidad.style.width = "54%";
+    numeroDeMesa.placeholder = "Ingrese n°";
+    numeroDeMesa.style.width = "55%";
+    
+} 
+ 
+});
+
+
+
+</script>
 
 
 

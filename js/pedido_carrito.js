@@ -59,11 +59,11 @@ function addItemToCart(title, price) {
     </td>
     <td class="cantidadColumna">
     <div class="col-sm-2">
-        <input class="inputCantidad col-sm-2 form-control" type="number" value="1" name="cantidad[]">
+        <input class="inputCantidad form-control" id="inputDeCantidad" type="number" value="1" name="cantidad[]">
         </div>
     </td>
     <td class="botonColumna">
-    <button type="button" class="inputQuitar btn btn-sm">QUITAR</button>
+    <button type="button" class="inputQuitar btn btn-danger btn-sm">QUITAR</button>
     </td>`;
 
 	cartRow.innerHTML = cartRowContents;
